@@ -16,7 +16,7 @@ import subprocess
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-PLUGIN = ROOT / "plugins" / "stream"
+PLUGIN = ROOT / "plugins" / "stream-payments"
 SKILL = PLUGIN / "skills" / "stream-payments"
 
 PLACEHOLDER = re.compile(r"<(GITHUB_REPO|DOCS_URL)>")
@@ -62,8 +62,8 @@ wl_version = (re.search(r"\| Skill version \| ([\d.]+) \|", wl) or [None, None])
 
 versions = {
     ".claude-plugin/marketplace.json": next((p.get("version") for p in claude_mkt.get("plugins", [])), None),
-    "plugins/stream/.claude-plugin/plugin.json": claude_plugin.get("version"),
-    "plugins/stream/.codex-plugin/plugin.json": codex_plugin.get("version"),
+    "plugins/stream-payments/.claude-plugin/plugin.json": claude_plugin.get("version"),
+    "plugins/stream-payments/.codex-plugin/plugin.json": codex_plugin.get("version"),
     "SKILL.md metadata.version": skill_version,
     "wl-config.md Skill version": wl_version,
 }
@@ -75,7 +75,7 @@ else:
 names = {claude_plugin.get("name"), codex_plugin.get("name"), PLUGIN.name,
          *(p.get("name") for p in claude_mkt.get("plugins", [])),
          *(p.get("name") for p in codex_mkt.get("plugins", []))}
-if names != {"stream"}:
+if names != {"stream-payments"}:
     problems.append(f"plugin names disagree: {sorted(map(str, names))}")
 
 # 3. Agent Skills frontmatter limits

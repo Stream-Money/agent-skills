@@ -1,14 +1,14 @@
 {
-  "name": "stream",
+  "name": "stream-money",
   "interface": {
     "displayName": "Stream.Money plugins"
   },
   "plugins": [
     {
-      "name": "stream",
+      "name": "stream-payments",
       "source": {
         "source": "local",
-        "path": "./plugins/stream"
+        "path": "./plugins/stream-payments"
       },
       "policy": {
         "installation": "AVAILABLE",

@@ -29,7 +29,7 @@ Stream-specific changes compared with the upstream skill:
 python3 tools/set_placeholders.py --repo <owner>/<repo> --docs-url https://<docs host>
 python3 tools/check_release.py
 npx -y @anthropic-ai/claude-code plugin validate .              # marketplace
-npx -y @anthropic-ai/claude-code plugin validate plugins/stream # plugin
+npx -y @anthropic-ai/claude-code plugin validate plugins/stream-payments # plugin
 ```
 
 The docs URL must be where `stream_docs_scalar/public/` is served. The skill links to
@@ -49,7 +49,7 @@ upstream repository and name Stream Ventures Limited.
 4. Commit, tag `v<version>`, push. Claude Code and Codex users with auto-update get it on their
    next session.
 5. **OpenAI plugin directory (ChatGPT + Codex):** run `python3 tools/package_openai.py`, then
-   upload `dist/stream-<version>.zip` at platform.openai.com/plugins → *Upload new or existing
+   upload `dist/stream-payments-<version>.zip` at platform.openai.com/plugins → *Upload new or existing
    plugin*. This needs an org owner (or the *Apps Management Write* permission) and a verified
    business identity. Every upload is a new version with its own automated checks and review.
    This is a skills-only plugin, so it needs no MCP review cases or demo video.

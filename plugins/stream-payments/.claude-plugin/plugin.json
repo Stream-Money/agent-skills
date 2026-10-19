@@ -1,5 +1,5 @@
 {
-  "name": "stream",
+  "name": "stream-payments",
   "description": "Integrate a merchant application with the Stream payment Gateway API: deposits, withdrawals, refunds, captures/voids, card tokens, recurring, hosted fields, Apple Pay / Google Pay and regional methods (India UPI/IMPS, South Africa EFT, Kenya and West Africa mobile money, Colombia Bre-B). Implements webhook verification and safe payment-state to order-state mapping, verified against the Stream sandbox.",
   "version": "1.0.0",
   "author": {

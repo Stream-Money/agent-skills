@@ -42,7 +42,7 @@ Claude Code:
 
 ```
 /plugin marketplace add Stream-Money/agent-skills
-/plugin install stream@stream
+/plugin install stream-payments@stream-money
 /reload-plugins
 ```
 
@@ -50,7 +50,7 @@ Codex:
 
 ```
 codex plugin marketplace add Stream-Money/agent-skills
-codex plugin add stream@stream
+codex plugin add stream-payments@stream-money
 ```
 
 **Or copy the folder**, if you would rather pin one version by hand. Copy
@@ -59,9 +59,9 @@ codex plugin add stream@stream
 - **Claude Code:** `.claude/skills/stream-payments/`
 - **OpenAI Codex:** `.agents/skills/stream-payments/`
 
-The plugin is called `stream`; the skill inside it is `stream-payments`. Check
+The plugin is called `stream-payments`; the skill inside it is `stream-payments`. Check
 that your agent found it before relying on it. In Claude Code, run `/skills`: it
-lists `stream-payments` for a copied folder, and `stream:stream-payments` for
+lists `stream-payments` for a copied folder, and `stream-payments:stream-payments` for
 the plugin (plugin skills are namespaced by the plugin's name). In Codex, ask it
 to list its available skills.
 
@@ -74,13 +74,13 @@ In Claude Code, auto-update is **off by default** for third-party marketplaces.
 Turn it on once per machine:
 
 1. run `/plugin`
-2. open **Marketplaces** and select `stream`
+2. open **Marketplaces** and select `stream-money`
 3. choose **Enable auto-update**
 
 Claude Code then refreshes the marketplace in the background shortly after a
 session starts, and the new version loads on the next launch. To update on
-demand instead, run `/plugin update stream@stream`. In Codex, refresh the
-catalog with `codex plugin marketplace upgrade stream`.
+demand instead, run `/plugin update stream-payments@stream-money`. In Codex, refresh the
+catalog with `codex plugin marketplace upgrade stream-money`.
 
 For a whole team, declare the marketplace in the project's
 `.claude/settings.json`. Everyone who trusts the repository is then offered it,
@@ -89,7 +89,7 @@ with auto-update already on:
 ```json
 {
   "extraKnownMarketplaces": {
-    "stream": {
+    "stream-money": {
       "source": { "source": "github", "repo": "Stream-Money/agent-skills" },
       "autoUpdate": true
     }
