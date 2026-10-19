@@ -1,0 +1,20 @@
+{
+  "name": "stream",
+  "interface": {
+    "displayName": "Stream.Money plugins"
+  },
+  "plugins": [
+    {
+      "name": "stream",
+      "source": {
+        "source": "local",
+        "path": "./plugins/stream"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Finance"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "stream",
+  "version": "1.0.0",
+  "description": "Integrate a merchant application with the Stream payment Gateway API: deposits, withdrawals, refunds, captures/voids, card tokens, recurring, hosted fields, Apple Pay / Google Pay and regional methods (India UPI/IMPS, South Africa EFT, Kenya and West Africa mobile money, Colombia Bre-B). Implements webhook verification and safe payment-state to order-state mapping, verified against the Stream sandbox.",
+  "skills": "./skills/",
+  "author": {
+    "name": "Stream.Money",
+    "url": "https://docs.stream.money"
+  },
+  "license": "MIT",
+  "keywords": [
+    "payments",
+    "psp",
+    "stream",
+    "upi",
+    "india",
+    "mobile-money",
+    "checkout",
+    "refunds",
+    "webhooks",
+    "recurring",
+    "hosted-fields",
+    "integration"
+  ],
+  "interface": {
+    "displayName": "Stream.Money payments",
+    "shortDescription": "Integrate Stream payments",
+    "longDescription": "Integrate a merchant application with the Stream payment Gateway API: deposits, withdrawals, refunds, captures/voids, card tokens, recurring, hosted fields, Apple Pay / Google Pay and regional methods (India UPI/IMPS, South Africa EFT, Kenya and West Africa mobile money, Colombia Bre-B). Implements webhook verification and safe payment-state to order-state mapping, verified against the Stream sandbox.",
+    "developerName": "Stream.Money",
+    "category": "Finance",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Integrate UPI deposits via Stream: India, INR, hosted checkout redirect, with webhooks.",
+      "Add server-to-server UPI deposits (PATCH with the customer's IP) to our existing Stream flow.",
+      "Review our Stream integration for missed webhooks and unsafe order-state mapping."
+    ],
+    "websiteURL": "https://docs.stream.money",
+    "supportURL": "https://github.com/Stream-Money/agent-skills/issues",
+    "privacyPolicyURL": "https://github.com/Stream-Money/agent-skills/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Stream-Money/agent-skills/blob/main/TERMS.md",
+    "brandColor": "#014DFF",
+    "brandColorDark": "#2E8FFF",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png"
+  },
+  "homepage": "https://docs.stream.money",
+  "repository": "https://github.com/Stream-Money/agent-skills"
+}

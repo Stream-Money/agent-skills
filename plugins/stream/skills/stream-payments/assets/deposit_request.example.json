@@ -1,0 +1,20 @@
+{
+  "paymentType": "DEPOSIT",
+  "paymentMethod": "UPI",
+  "referenceId": "order-1001",
+  "amount": 500,
+  "currency": "INR",
+  "description": "Order #1001",
+  "customer": {
+    "referenceId": "customer-42",
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "phone": "91 9895270649"
+  },
+  "billingAddress": {
+    "countryCode": "IN"
+  },
+  "returnUrl": "https://merchant.example.com/checkout/return?order=1001",
+  "webhookUrl": "https://merchant.example.com/webhooks/stream"
+}
