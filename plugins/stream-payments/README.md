@@ -123,7 +123,7 @@ production is `https://app.stream.money`.
 Give the agent a task naming the operations, method and flow, for example:
 
 > Integrate UPI deposits via Stream: India, INR, hosted checkout redirect,
-> with webhooks and refunds.
+> with webhooks.
 
 > Add server-to-server UPI deposits (PATCH with the customer's IP) to our
 > existing Stream flow.
